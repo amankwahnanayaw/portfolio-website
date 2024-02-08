@@ -22,8 +22,8 @@ export default {
             }
         },
         {
-            name: 'name',
-            title: 'Name',
+            name: 'feedback',
+            title: 'Feedback',
             type: 'string'
         },
     ]
