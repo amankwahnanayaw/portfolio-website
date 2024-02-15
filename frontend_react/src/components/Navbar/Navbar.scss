@@ -74,4 +74,8 @@
             }
         }
     }
+
+    @media screen and (max-widht: 900px) {
+        display: none;
+    }
 }
