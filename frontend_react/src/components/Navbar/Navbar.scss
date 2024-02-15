@@ -107,5 +107,13 @@
     padding: 1rem;
 
     width: 80%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    background: url('../../assets/bgWhite.png')
    }
 }
