@@ -1,5 +1,5 @@
 import React from 'react';
-import { easeInOut, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import { images } from '../../constants'
 import './Header.scss';
@@ -32,7 +32,7 @@ const Header = () => {
               <h1 className='head-text'>Nana Yaw</h1>
             </div>
           </div>
-          <div className='tag-cmp app__fle'>
+          <div className='tag-cmp app__flex'>
             <p className='p-text'>Full-Stack Developer</p>
             <p className='p-text'>Freelancer</p>
           </div>
