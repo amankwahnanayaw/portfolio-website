@@ -43,5 +43,8 @@
     align-items: flex-start;
     height: 100%;
 
-    
+    @media screen and (max-width: 2000px) {
+        width: 100%;
+        margin-right: 0rem;
+    }
 }
