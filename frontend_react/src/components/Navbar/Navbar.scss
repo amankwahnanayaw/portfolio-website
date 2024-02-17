@@ -17,7 +17,11 @@
 .app_navbar-logo {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
+
+    h1 {
+        display: inline;
+    }
 
     img {
         width: 90px;
