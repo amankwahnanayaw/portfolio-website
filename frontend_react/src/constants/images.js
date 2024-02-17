@@ -37,6 +37,7 @@ import spotify from '../assets/spotify.png';
 import Django from '../assets/Django.png';
 import django1 from '../assets/django1.png';
 import nanayaw from '../assets/nanayaw.png'
+import profileny from '../assets/profileny.png'
 
 export default {
   email,
@@ -75,4 +76,5 @@ export default {
   Django,
   django1,
   nanayaw,
+  profileny,
 };
