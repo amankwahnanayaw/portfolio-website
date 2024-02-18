@@ -23,7 +23,13 @@ const About = () => {
 
       <div>
         { abouts.map((about, index) => (
-          
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.5, type: 'tween' }}
+          >
+
+          </motion.div>
         )) }
       </div>
     </>
