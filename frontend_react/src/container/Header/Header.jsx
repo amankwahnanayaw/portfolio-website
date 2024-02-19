@@ -52,6 +52,7 @@ const Header = () => {
          alt='profile_circle'
          className='overlay_circle' 
         >
+          <img src={images.circle} alt='profile_circle'/>
         </motion.div>
       </motion.div>
 
