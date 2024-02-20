@@ -55,6 +55,13 @@
         border-radius: 0.5rem;
         background-color: #fff;
         color: #000;
+
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 0 25px rgba(0,0,0,0.2);
+        }
     }
 }
 
@@ -72,6 +79,6 @@
     }
 
     @media screen and (min-width: 2000px) {
-        height: 250px;
+        height: 350px;
     }
 }
