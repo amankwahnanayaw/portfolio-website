@@ -32,3 +32,19 @@
         align-items: center;
     }
 }
+
+.app__skills-item {
+    flex-direction: column;
+    text-align: center;
+
+    margin: 1rem;
+
+    transition: all 0.3s ease-in-out;
+
+    div {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+}
