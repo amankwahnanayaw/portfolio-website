@@ -38,7 +38,7 @@ const Testimonial = () => {
      {testimonials.length && (
       <>
         <div className='app__testimonial-item app__flex'>
-          <img src={urlFor(test.imgurl)} alt='testimonial' />
+          <img src={urlFor(test.imgUrl)} alt='testimonial' />
           <div className='app__testimonial-content'>
             <p className='p-text'>{test.feedback}</p>
             <div>
@@ -66,7 +66,7 @@ const Testimonial = () => {
           transition={{ duration: 0.5, type: 'tween' }}
           key={brand._id}
         >
-
+          <img src={urlFor(brand.imgUrl)} alt={brand.name}/>
         </motion.div>
       ))}
      </div>
