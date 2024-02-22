@@ -29,6 +29,10 @@ const Testimonial = () => {
   
   const test = testimonials[currentIndex];
 
+  const handleClick = (index) => {
+    setCurrentIndex(index)
+  }
+
   return (
     <>
      {testimonials.length && (
@@ -54,6 +58,18 @@ const Testimonial = () => {
         </div>
       </>
      )}
+
+     <div className='app__testimonials-brands app__flex'>
+      {brands.map((brand) => (
+        <motion.div
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ duration: 0.5, type: 'tween' }}
+          key={brand._id}
+        >
+
+        </motion.div>
+      ))}
+     </div>
     </>
   )
 }
