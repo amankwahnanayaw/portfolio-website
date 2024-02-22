@@ -7,8 +7,9 @@ import { urlFor, client } from '../../client';
 import './Testimonial.scss';
 
 const Testimonial = () => {
-  const [experience, setExperience] = useState([]);
-  const [skills, setSkills] = useState([]);
+  const [brands, setBrands] = useState([]);
+  const [testimonials, setTestimonials] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <div>Testimonial</div>
