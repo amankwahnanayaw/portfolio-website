@@ -90,6 +90,14 @@
             height: 20px;
             color: var(--secondary-color);
         }
+
+        &:hover {
+            background-color: var(--secondary-color);
+
+            svg {
+                color: var(--white-color);
+            }
+        }
     }
 }
 
