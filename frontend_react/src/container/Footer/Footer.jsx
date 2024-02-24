@@ -15,6 +15,11 @@ const Footer = () => {
           <img src={images.email} alt='email' />
           <a href='mailto:amankwahnanayaw5@gmail.com' className='p-text'>amankwahnanayaw5@gmail.com</a>
         </div>
+
+        <div className='app__footer-card'>
+          <img src={images.mobile} alt='mobile' />
+          <a href='tel: +233 553163348' className='p-text'>+233 553163348 / +233 2080410 </a>
+        </div>
       </div>
     </>
   )
