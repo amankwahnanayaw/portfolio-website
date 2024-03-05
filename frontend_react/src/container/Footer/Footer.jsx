@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -6,6 +6,11 @@ import { client } from '../../client';
 import './Footer.scss';
 
 const Footer = () => {
+
+  const [formData, setFormData] = useState({name: '', email: '', message: ''});
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+
   return (
     <>
       <h2 className='head-text'>Take a coffee & chat with me</h2>
@@ -33,13 +38,13 @@ const Footer = () => {
           <textarea 
             className='p-text'
             placeholder='Your Message'
-            name={message}
+            name='message'
             value={message}
             onChange={handleChangeInput}
             
           />
         </div>
-        <button></button>
+        <button type='button' className='p-text' onClick={handleSubmit}>Send Message</button>
       </div>
 
     </>
