@@ -11,6 +11,25 @@ const Footer = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
 
+  const { name, email, message } = formData;
+
+  const handleChangeInput = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({ ...formData, [name]: value })
+  }
+
+  const handleSubmit = () => {
+    setLoading(true);
+
+    const contact = {
+      _type: 'contact',
+      name: name,
+      email: email,
+      message: message
+    }
+  }
+
   return (
     <>
       <h2 className='head-text'>Take a coffee & chat with me</h2>
@@ -44,7 +63,7 @@ const Footer = () => {
             
           />
         </div>
-        <button type='button' className='p-text' onClick={handleSubmit}>Send Message</button>
+        <button type='button' className='p-text' onClick={handleSubmit}>{loading ? 'Sending' : 'Send Message'}</button>
       </div>
 
     </>
