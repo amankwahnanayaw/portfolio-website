@@ -86,5 +86,13 @@
            color: var(--secondary-color);
            outline: none;
         }
+
+        textarea {
+            height: 170px;
+        }
+
+        &:hover {
+            box-shadow: 0 0 25px #fef4f5;
+        }
     }
 }
