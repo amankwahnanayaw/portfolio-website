@@ -11,4 +11,14 @@
     align-items: center;
     flex-wrap: wrap-reverse;
     margin: 4rem 2rem 2rem;
+
+    .app__footer-card {
+        min-width: 290px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        
+    }
 }
